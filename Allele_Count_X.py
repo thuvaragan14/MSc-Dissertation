@@ -18,7 +18,7 @@ def X_Allele_Frequency(filename, output):
                 ref = fields[3]
                 alt = fields[4]
             
-                # Get the genotype information for all samples
+                # Get the genotype information for all samples taking only the first three characters e.g. 0/1
                 genotypes = fields[9:]
                 genotypes_first_three = [genotype[:3] for genotype in genotypes]
             
